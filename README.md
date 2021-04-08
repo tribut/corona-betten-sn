@@ -6,4 +6,4 @@ Das Tool lädt die aktuellen Zahlen für Bettenbelegung von Inzidenzen von coron
 Leider gibt es auf der offiziellen Seite weder einen Graph des zeitlichen Verlaufs der (für einen möglichen weiteren Lockdown ausschlaggebenden) Zahl der belegten Betten auf Normalstation noch lässt sich diese neue Kenngröße sinnvoll mit der 7-Tages-Inzidenz in Verbindung bringen. 
 Das ist meine Spielwiese, um mir selbst diese Daten zu erschließen.
 
-![inzidenz-betten](https://user-images.githubusercontent.com/719105/113928857-a10e9f00-97ef-11eb-905c-d6ce6c21bbeb.png)
+![inzidenz-betten](https://user-images.githubusercontent.com/719105/114005143-8ecc4980-985f-11eb-9fbf-d6dd55bfc1d7.png)
