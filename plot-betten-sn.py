@@ -56,7 +56,11 @@ p3, = ax_beds.plot_date(
     ':', color=p1.get_color(), label='Belegt mit C19 gesamt')
 bed_threshold = 1300
 ax_beds.axhline(y=bed_threshold, color='red', linestyle="--")
-ax_beds.text(ax_beds.get_xlim()[0] + 1, bed_threshold*1.05, 'Erneuter Lockdown', color='red')
+ax_beds.text(ax_beds.get_xlim()[0] + 1, bed_threshold * 1.05,
+    'Neue Notbremse', color='red')
+ax_beds.text(0.99, 0.02,
+    'Stand: {}\nDaten von coronavirus.sachsen.de'.format(
+    incidence_x[-1].strftime('%x')), ha='right', transform=ax_beds.transAxes)
 
 p2, = ax_incidence.plot_date(
     incidence_x[incidence_mask],
@@ -65,6 +69,9 @@ p2, = ax_incidence.plot_date(
 
 ax_beds.set_ylabel("Betten")
 ax_incidence.set_ylabel("7-Tages-Inzidenz")
+
+ax_beds.grid(True)
+# ax_incidence.grid(True)
 
 ax_beds.yaxis.label.set_color(p1.get_color())
 ax_incidence.yaxis.label.set_color(p2.get_color())
